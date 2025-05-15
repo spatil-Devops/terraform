@@ -5,7 +5,7 @@ data "aws_route53_zone" "zone" {
 
 data "aws_security_group" "allow-all" {
   filter = {
-    name = "group_name"
+    name = "group-name"
     values = ["allow-all"]
   }
 }
