@@ -6,7 +6,7 @@ module "app" {
   name = each.key
   instance_type = each.value["instance_type"]
   vpc_security_group_ids = var.vpc_security_group_ids
-
+  zone_id = var.zone_id
 }
 
 
